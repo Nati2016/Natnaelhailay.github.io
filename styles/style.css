@@ -332,7 +332,7 @@ svg {
 }
 
 .about__description {
-  font-size: var(--bigger-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 2rem;
 }
