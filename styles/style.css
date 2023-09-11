@@ -452,6 +452,8 @@ svg {
   border-radius: 1rem;
   overflow: hidden;
   transition: box-shadow 0.4s, transform 0.4s;
+  display: flex;
+  flex:1;
 }
 
 .projects__card:hover {
@@ -491,6 +493,10 @@ svg {
   height: 100%;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+}
+
+.index{
+  z-index:-100;
 }
 
 .projects__subtitle,
