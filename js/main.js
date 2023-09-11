@@ -99,6 +99,25 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 
+// Select all elements with the class 'projects__card'
+var cardElements = document.querySelectorAll('.projects__card');
+
+// Loop through each card element
+cardElements.forEach(function(card) {
+  var modal = card.querySelector('.projects__modal');
+
+  card.addEventListener('mouseover', function() {
+    modal.classList.remove('index');
+  });
+
+  card.addEventListener('mouseout', function() {
+    modal.classList.add('index');
+  });
+
+  // Add initial 'index' class to the modal element
+  modal.classList.add('index');
+});
+
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
